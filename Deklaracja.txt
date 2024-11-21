@@ -1,0 +1,46 @@
+Dokumentacja aplikacji WEB
+Aplikacja Szybka Matematyka
+
+Nowy Sącz, 07.11.2024
+
+1. Cel aplikacji
+Aplikacja Szybka Matematyka to edukacyjna gra matematyczna, która pozwala użytkownikom rozwijać umiejętności szybkiego liczenia. Celem gry jest zachęcenie do ćwiczenia prostych działań matematycznych, takich jak dodawanie, odejmowanie i mnożenie, w ograniczonym czasie. Użytkownik może udzielać odpowiedzi na generowane pytania matematyczne, a jego wyniki są podsumowane po zakończeniu rundy. Gra umożliwia śledzenie liczby poprawnych i błędnych odpowiedzi oraz ocenę końcową na podstawie osiągniętego wyniku.
+
+2. Używane technologie
+Frontend: HTML, CSS, JavaScript (React.js) - służą do stworzenia dynamicznego interfejsu użytkownika oraz zarządzania stanem aplikacji.
+Backend: JavaScript (logika wewnątrz gry) - do zarządzania pytaniami, oceną oraz licznikiem czasu.
+Wersjonowanie: Git, GitHub - do zarządzania kodem źródłowym oraz współpracy zespołowej.
+Inne: ESLint - do utrzymania jakości kodu i spójnych konwencji programistycznych.
+3. Wymagania funkcjonalne
+Start gry: Użytkownik może rozpocząć grę, klikając przycisk ROZPOCZNIJ GRĘ lub naciskając klawisz Enter.
+Generowanie pytań: Aplikacja losowo generuje pytania z zakresu dodawania, odejmowania i mnożenia, gdzie użytkownik musi podać wynik.
+Licznik czasu: Każde pytanie ma limit czasu wynoszący 10 sekund. Po upływie czasu system rejestruje odpowiedź jako niepoprawną.
+Rejestracja wyników: Gra śledzi poprawne i błędne odpowiedzi użytkownika.
+Podsumowanie gry: Po zakończeniu 15 pytań aplikacja przechodzi do ekranu z wynikami, gdzie użytkownik widzi końcowy wynik oraz ocenę w zależności od procenta poprawnych odpowiedzi.
+Ocena: W zależności od uzyskanego wyniku gra przypisuje ocenę wyświetlaną w kolorach, wskazującą poziom (np. czerwony dla oceny niedostatecznej, zielony dla oceny celującej).
+Opcja ponownego uruchomienia: Użytkownik może zrestartować grę, aby rozpocząć ją od nowa.
+4. Wymagania niefunkcjonalne
+Wydajność: Aplikacja powinna działać płynnie, zapewniając odpowiedzi na pytania bez opóźnień.
+Bezpieczeństwo: Gra jest prostą aplikacją, ale przy produkcji powinna uwzględniać ochronę przed nieautoryzowanym dostępem do plików.
+Skalowalność: Gra jest zoptymalizowana dla jednego użytkownika jednocześnie.
+Dostępność: Aplikacja powinna być dostępna przez 99,9% czasu pracy serwera w przypadku wdrożenia.
+Łatwość utrzymania: Kod powinien być modularny i dobrze udokumentowany, aby ułatwić rozwój.
+Przyjazność dla użytkownika: Interfejs powinien być intuicyjny i dostosowany do użytkowników w każdym wieku.
+5. Diagram aktywności
+Rysunek 1. Diagram aktywności - rozgrywka
+Diagram: Użytkownik wybiera opcję Start gry ➔ Losowane jest pytanie ➔ Użytkownik wprowadza odpowiedź ➔ System sprawdza poprawność ➔ Aktualizowany jest wynik ➔ Użytkownik widzi podsumowanie po zakończeniu gry.
+
+6. Architektura systemu
+Aplikacja Szybka Matematyka opiera się na architekturze klienta. Frontend (React.js) obsługuje interfejs użytkownika oraz logikę gry. Gra jest jednoplatformowa, a cała logika znajduje się po stronie klienta, co zapewnia łatwość wdrożenia oraz minimalizację zasobów po stronie serwera.
+
+7. Plan wdrożenia
+Testowanie lokalne: Testy działania aplikacji oraz ocena jej stabilności i wydajności na środowisku deweloperskim.
+Wdrożenie na serwer testowy: Upewnienie się, że aplikacja działa poprawnie po stronie użytkownika.
+Przeniesienie na środowisko produkcyjne: Pełne wdrożenie oraz monitorowanie poprawnego działania aplikacji.
+Aplikacja będzie wdrażana automatycznie przy użyciu skryptów CI/CD, zapewniających wdrożenia aktualizacji na środowisko produkcyjne.
+
+
+
+
+
+
